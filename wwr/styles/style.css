@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400&family=Lato:ital,wght@0,400;0,700;1,400&display=swap&family=Playfair+Display:ital,wght@0,400');
+
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #9cdcec  ;
@@ -20,10 +22,13 @@
     --nav-hover-link-color: #b48560;
     --nav-hover-background-color: #000866;
   }
-  
 body {
     background-color: var(--primary-color);
     font-style: italic;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 #content {
     max-width: 1600px;
@@ -37,6 +42,9 @@ nav a, footer a {
     color: var(--accent1-color);
     text-decoration: none;
 }
+nav a {
+    padding: 35px;
+}
 nav a:visited {
     color: var(--accent2-color);
 }
@@ -48,7 +56,11 @@ nav a:hover, footer a:hover {
 .book, .join {
     color: var(--accent1-color);
     background-color: var(--primary-color);
+    border-radius: 5px;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
 }
 .book:hover, .join:hover {
     color: var(--primary-color);
@@ -65,8 +77,12 @@ nav a:hover, footer a:hover {
     */
     width: 150px;
 }
+#logo_link {
+    padding-top: 5px;
+}
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
@@ -78,16 +94,22 @@ main section {
     text-align: center;
 }
 #background {
+    background-color: var(--accent2-color);
     height: 725px;
 }
 .msg {
     background-color: var(--primary-color);
+    line-height: 1.5em;
+    padding: 30px;
 }
 #hero-img {
     background-color: var(--accent1-color);
 }
 .home-title {
     color: var(--accent2-color);
+    font: "Playfair Display", "Times New Roman", serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4 {
     color: var(--accent2-color);
@@ -97,15 +119,32 @@ h4 {
 }
 .msg p {
     color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 h2 {
     color: var(--accent2-color);
+    margin: 0;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid var(--accent1-color);
+}
+main section img {
+    box-sizing: border-box;
 }
 footer h3 {
     color: var(--accent1-color);
 }
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+footer .social img {
+    padding-top: 15px;
 }
 footer p {
     font-size: 1.2em;
