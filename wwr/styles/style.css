@@ -22,6 +22,8 @@
     --nav-hover-link-color: #b48560;
     --nav-hover-background-color: #000866;
   }
+
+/* Header and Footer*/
 body {
     background-color: var(--primary-color);
     font-style: italic;
@@ -81,6 +83,8 @@ nav a:hover, footer a:hover {
     background-color: var(--accent1-color);
     text-decoration: underline;
 }
+
+/* index.html*/
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -196,6 +200,8 @@ h2 {
 main section img {
     box-sizing: border-box;
 }
+
+/* Footer */
 footer h3 {
     color: var(--accent1-color);
 }
@@ -212,6 +218,46 @@ footer .social img {
 }
 footer p {
     font-size: 1.2em;
+}
+
+/*Blog*/
+.page-descriptor {
+    text-align: center;
+}
+.blog {
+    justify-content: center;
+    display: grid;
+}
+.blog-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.blog-card .blog-card-img {
+    width: 100%;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.blog-card .inner-card {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding: 10px;
+}
+.blog-card .inner-card p {
+    text-align: left;
+}
+#scorpion-card {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    border-right: 2px solid var(--accent1-color);
+}
+#sheep-card {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+#critter-card .blog-card-img {
+    border-right: 2px solid var(--accent1-color);
 }
 
 @media screen and (max-width: 900px) {
@@ -253,5 +299,24 @@ footer p {
     }
     footer {
         margin-top: 25px;
+    }
+    .blog-card {
+        grid-template-columns: 1fr;
+    }
+    .blog-card .inner-card {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    #scorpion-card {
+        grid-column: auto;
+        grid-row: auto;
+        border-right: none;
+    }
+    #critter-card .blog-card-img {
+        border-right: none;
+    }
+    #sheep-card {
+        grid-column: auto;
+        grid-row: auto;
     }
 }

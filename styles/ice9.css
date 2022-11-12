@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    background-color: black;
+    display: grid;
+}
+.main {
+    width: 250px;
+    justify-self: center;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.image {
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.middle {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+.bottom {
+    grid-row: 3/4;
+    background-color: blue;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+#btleft {
+    grid-column: 1/2;
+}
+#btmiddle {
+    grid-column: 2/3;
+}
+#btright {
+    grid-column: 3/4;
+}
+.bottom-top {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.bottom-top h2 {
+    margin-bottom: 0;
+}
+.bottom-bottom p {
+    margin-top: 0;
+}
+.bottom-bottom {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+sup {
+    font-size: 0.5em;
+}
