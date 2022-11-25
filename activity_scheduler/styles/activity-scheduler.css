@@ -37,7 +37,7 @@ input[type="image"] {
 body {
   display: grid;
   overflow: hidden;
-  background-color: red;/*var(--accent3-color);*/
+  background-color: var(--accent3-color);
 }
 .content {
   max-width: 300px;
