@@ -113,6 +113,9 @@ ul {
   margin: 0 auto;
   background-color: var(--secondary-color);
 }
+input {
+  width: 100%;
+}
 
 /* schedule-rules */
 .rules_labels {
