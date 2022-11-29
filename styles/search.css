@@ -1,0 +1,52 @@
+.topnav {
+    overflow: hidden; /*I know this is neccesary by confused about why*/
+    background-color: #e9e9e9; /*This isn't black, as the source says it should be.*/
+}
+
+.topnav a {
+    float: left; /*Right side of the nav*/
+    display: block; /*Float allows multiple block elements fitting on a single line*/
+    color: black;
+    text-align: center;
+    padding: 14px 16px; /*Space out links*/
+    text-decoration: none; /*Remove underline*/
+    font-size: 17px;
+}
+
+/* Change the BACKGROUND color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*Highlight the current page on the nav*/
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Search Box*/
+.topnav input[type=text] {
+    float: right; /*Right side of the nav*/
+    padding: 6px;
+    border: none;
+    /*Confused at some of these alignment instructions. margin-top vs padding for links*/
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+        /*Make our nav a single collumn*/
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
