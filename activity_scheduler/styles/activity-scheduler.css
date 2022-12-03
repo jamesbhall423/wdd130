@@ -39,6 +39,12 @@ body {
   overflow: hidden;
   background-color: var(--accent3-color);
 }
+h1, h2{
+  font-family: var(--heading-font);
+}
+p, input, h3, h4, h5, h6  {
+  font-family: var(--paragraph-font);
+}
 .content {
   max-width: 300px;
   font-size: 0.8em;
